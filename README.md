@@ -5,8 +5,6 @@ This script validates customer S3 logs bucket policy and KMS key policy to allow
 
 ###  [Validation Script](validate-logging-role.sh)
 
-Validates whether the IAM role is created correctly in the trusting account.
-
 #### Parameters
 * **pegaRoleArn:** enter the Pega service IAM Role Arn provided by pega to customer
 * **bucketName:** enter the customer logs bucket name
