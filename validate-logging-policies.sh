@@ -4,6 +4,7 @@
 ### validate S3 bucket Policy
 ### validate kms key policy
 
+### Ensure you are using the correct aws profile and region
 ### ./validate-logging-policies-c.sh
 
 
@@ -57,7 +58,7 @@ if [ -z "${kmsKeyArn}" ]; then
 elif [[ "$kmsKeyArnFound" != "$kmsKeyArn" ]]; then 
 	echo "Fail: kms key found doesn't match ${kmsKeyArn}"
 else
-	echo "Pass: Bucket is encrypted with exepcted kms key"
+	echo "Pass: Bucket is encrypted with expected kms key"
 fi
 
 enabled=$(aws kms describe-key --key-id "${kmsKeyArn}" | jq -r '.KeyMetadata.Enabled')
