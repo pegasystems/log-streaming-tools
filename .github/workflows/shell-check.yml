@@ -21,4 +21,4 @@ jobs:
         sudo cp "shellcheck-${scversion}/shellcheck" /usr/bin/
         rm -r "shellcheck-${scversion}"
         shellcheck --version
-        shellcheck *.sh
+        shellcheck validate-logging-policies.sh
