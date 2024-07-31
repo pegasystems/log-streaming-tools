@@ -1,9 +1,10 @@
 
 # log-streaming-tools
+This repository provides tools that support Pega Clients who are leveraging [Pega Cloud's log stream capabilities](https://docs.pega.com/bundle/pega-cloud/page/pega-cloud/pc/pcs-logs-overview.html).
+
+##  [Validation Script](validate-logging-policies.sh)
 
 This script validates customer S3 logs bucket policy and KMS key policy to allow pega logging service to forward logs to the destination customer bucket 
-
-###  [Validation Script](validate-logging-role.sh)
 
 #### Parameters
 * **pegaRoleArn:** enter the Pega service IAM Role Arn provided by pega to customer
